@@ -1,6 +1,6 @@
 {
   "name": "eskom-loadshedding-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Exposing the Eskom Loadshedding Api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,9 @@
     "dev": "tsc --watch"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
     "typescript": "^3.6.4"
   }
 }
