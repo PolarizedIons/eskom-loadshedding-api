@@ -10,7 +10,6 @@ export default class HTTPClient {
             uri += (path.indexOf('?') > -1 ? '&' : '?') + '_=' + (new Date()).getTime();
         }
 
-        console.log(uri)
         return axios.get(uri);
     }
 }

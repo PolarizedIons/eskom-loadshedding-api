@@ -22,3 +22,17 @@ Search.getMunicipalities(Province.WESTERN_CAPE)
     .then((municipalities: Municipality[]) => 
         console.log('Western Cape municipalities:', municipalities.map((el: Municipality) => el.name))
     );
+
+
+// import { Search, Suburb } from './index';
+import { Suburb } from './index';
+
+Search.getSuburbs(10237)
+    .then((suburbs: Suburb[]) =>
+        console.log('All suburbs in Beaufort West:', suburbs)
+    );
+
+Search.getSuburbs(10237, 'Aard')
+    .then((suburbs: Suburb[]) =>
+        console.log('Filterd suburbs in Beaufort West:', suburbs)
+    );

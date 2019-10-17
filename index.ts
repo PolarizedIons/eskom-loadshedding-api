@@ -4,3 +4,4 @@ export { LoadsheddingStatus, LoadsheddingStatusRaw } from './enums/LoadsheddingS
 export * from './networking/search';
 export * from './enums/Province';
 export * from './models/Municipality';
+export * from './models/Suburb';
