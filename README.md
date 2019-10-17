@@ -5,7 +5,7 @@ Basic (in-progress) api to expose the eskom endpoints for loadshedding.
 ## Get the current status
 
 ```js
-import { Status, LoadsheddingStatus } from './index';
+import { Status, LoadsheddingStatus } from 'eskom-loadshedding-api';
 
 Status.getStatus()
     .then((status: LoadsheddingStatus) =>
@@ -21,7 +21,7 @@ Status.getStatus()
 ## Search for municipalities
 
 ```js
-import { Search, Province, Municipality } from './index';
+import { Search, Province, Municipality } from 'eskom-loadshedding-api';
 
 Search.getMunicipalities(Province.WESTERN_CAPE)
     .then((municipalities: Municipality[]) => 
