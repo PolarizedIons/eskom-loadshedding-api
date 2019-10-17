@@ -1,16 +1,12 @@
-import { Status, LoadsheddingStatus } from './index';
 
 console.log('###############');
 console.log('   Eskom API   ');
 console.log('###############');
 
-Status.getStatusRaw()
-    .then(status =>
-        console.log('Current status: (raw)', status)
-    );
+import { Status, LoadsheddingStatus } from './index';
 
 Status.getStatus()
-    .then(status =>
+    .then((status: LoadsheddingStatus) =>
         console.log('Current status: ', status)
     );
 
@@ -19,3 +15,10 @@ Status.getStatus()
         console.log('Is currently loadshedding?', status !== LoadsheddingStatus.NOT_LOADSHEDDING)
     );
 
+
+import { Search, Province, Municipality } from './index';
+
+Search.getMunicipalities(Province.WESTERN_CAPE)
+    .then((municipalities: Municipality[]) => 
+        console.log('Western Cape municipalities:', municipalities.map((el: Municipality) => el.name))
+    );
