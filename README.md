@@ -1,6 +1,12 @@
 # Eskom Loadshedding API
 
-Basic (in-progress) api to expose the eskom endpoints for loadshedding.
+![Dependencies](https://img.shields.io/david/polarizedions/eskom-loadshedding-api?style=for-the-badge)
+![Downloads](https://img.shields.io/npm/dm/eskom-loadshedding-api?style=for-the-badge&color=informational)
+![Licence](https://img.shields.io/npm/l/eskom-loadshedding-api?style=for-the-badge&color=red)
+![Version](https://img.shields.io/npm/v/eskom-loadshedding-api?style=for-the-badge)
+
+A basic (in-progress) api to expose the Eskom loadshedding endpoints. Typescript ready!
+
 
 ## Get the current status
 
@@ -11,6 +17,11 @@ Status.getStatus()
     .then((status: LoadsheddingStatus) =>
         console.log('Current status: ', status)
     );
+```
+
+## Check if currently loadshedding
+```js
+import { Status, LoadsheddingStatus } from 'eskom-loadshedding-api';
 
 Status.getStatus()
     .then(status =>

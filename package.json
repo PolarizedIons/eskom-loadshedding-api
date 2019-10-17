@@ -10,6 +10,11 @@
     "url": "https://polarizedions.net"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PolarizedIons/eskom-loadshedding-api/"
+  },
+  "keywords": ["eskom", "loadshedding", "api"],
   "scripts": {
     "prepublish": "tsc",
     "dev": "tsc --watch"
