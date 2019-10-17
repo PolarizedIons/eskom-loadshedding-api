@@ -1,6 +1,6 @@
 {
   "name": "eskom-loadshedding-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Exposing the Eskom Loadshedding Api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,11 @@
     "type": "git",
     "url": "https://github.com/PolarizedIons/eskom-loadshedding-api/"
   },
-  "keywords": ["eskom", "loadshedding", "api"],
+  "keywords": [
+    "eskom",
+    "loadshedding",
+    "api"
+  ],
   "scripts": {
     "prepublish": "tsc",
     "dev": "tsc --watch"
