@@ -7,8 +7,9 @@
 
 A basic (in-progress) api to expose the Eskom loadshedding endpoints. Typescript ready!
 
+## Usage / Examples
 
-## Get the current status
+### Get the current status
 
 ```js
 import { Status, LoadsheddingStatus } from 'eskom-loadshedding-api';
@@ -19,7 +20,7 @@ Status.getStatus()
     );
 ```
 
-## Check if currently loadshedding
+### Check if currently loadshedding
 ```js
 import { Status, LoadsheddingStatus } from 'eskom-loadshedding-api';
 
@@ -29,7 +30,7 @@ Status.getStatus()
     );
 ```
 
-## Search for municipalities
+### Search for municipalities
 
 ```js
 import { Search, Province, Municipality } from 'eskom-loadshedding-api';
@@ -37,6 +38,29 @@ import { Search, Province, Municipality } from 'eskom-loadshedding-api';
 Search.getMunicipalities(Province.WESTERN_CAPE)
     .then((municipalities: Municipality[]) => 
         console.log('Western Cape municipalities:', municipalities.map((el: Municipality) => el.name))
+    );
+
+```
+
+### Search for suburbs in municipalities
+
+```js
+import { Search, Suburb } from 'eskom-loadshedding-api';
+
+Search.getMunicipalitySuburbs(10237 /* Beauford West's id */, 'Aard' /* Search term */)
+    .then((suburbs: Suburb[]) =>
+        console.log('Filterd suburbs in Beaufort West:', suburbs)
+    );
+```
+
+### Search for suburbs in SA
+
+```js
+import { Search, SearchSuburb } from 'eskom-loadshedding-api';
+
+Search.searchSuburbs('Ashton')
+    .then((results: SearchSuburb[]) => 
+        console.log('Searching for "Ashton":', results)
     );
 
 ```

@@ -27,12 +27,22 @@ Search.getMunicipalities(Province.WESTERN_CAPE)
 // import { Search, Suburb } from './index';
 import { Suburb } from './index';
 
-Search.getSuburbs(10237)
+
+Search.getMunicipalitySuburbs(10237)
     .then((suburbs: Suburb[]) =>
         console.log('All suburbs in Beaufort West:', suburbs)
     );
 
-Search.getSuburbs(10237, 'Aard')
+Search.getMunicipalitySuburbs(10237, 'Aard')
     .then((suburbs: Suburb[]) =>
         console.log('Filterd suburbs in Beaufort West:', suburbs)
+    );
+
+
+// import { Search, SearchSuburb } from './index';
+import { SearchSuburb } from './index';
+
+Search.searchSuburbs('Ashton')
+    .then((results: SearchSuburb[]) => 
+        console.log('Searching for "Ashton":', results)
     );

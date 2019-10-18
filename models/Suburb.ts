@@ -13,10 +13,12 @@ export class SuburbRaw {
 export class Suburb {
     public id: number;
     public name: string;
+    public total: number;
 
     constructor(suburb: Suburb) {
         this.id = suburb.id;
         this.name = suburb.name;
+        this.total = suburb.total;
     }
 
 
@@ -24,6 +26,7 @@ export class Suburb {
         return new Suburb({
             id: parseInt(suburb.id, 10),
             name: suburb.text,
+            total: suburb.Tot,
         });
     }
 }
