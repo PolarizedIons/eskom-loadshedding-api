@@ -76,40 +76,6 @@ Search.searchSuburbs('Ashton')
 + Search.getMunicipalitySuburbs(municipalityId: number, searchTerm: string = '', pageNum: number = 1): Promise<Suburb[]>;
 + Search.searchSuburbs(searchTerm: string, maxResults: number = 300): Promise<SearchSuburb[]>;
 
-## Enums
-
-### Loadshedding Status
-```ts
-enum LoadsheddingStatus {
-    UNKNOWN = 'UNKNOWN',
-    NOT_LOADSHEDDING = 'NOT_LOADSHEDDING',
-    STAGE_1 = 'STAGE_1',
-    STAGE_2 = 'STAGE_2',
-    STAGE_3 = 'STAGE_3',
-    STAGE_4 = 'STAGE_4',
-    STAGE_5 = 'STAGE_5',
-    STAGE_6 = 'STAGE_6',
-    STAGE_7 = 'STAGE_7',
-    STAGE_8 = 'STAGE_8',
-}
-```
-
-### Province
-
-```ts
-export enum Province {
-    EASTERN_CAPE = 1,
-    FREE_STATE = 2,
-    GAUTENG = 3,
-    KWAZULU_NATAL = 4,
-    LIMPOPO = 5,
-    MPUMALANGA = 6,
-    NORTH_WEST = 7,
-    NORTHERN_CAPE = 8,
-    WESTERN_CAPE = 9,
-};
-```
-
 ## Models
 
 ### Municipality
@@ -142,4 +108,39 @@ class SearchSuburb {
     id: number;
     total: number;
 }
+```
+
+
+## Enums
+
+### Loadshedding Status
+```ts
+enum LoadsheddingStatus {
+    UNKNOWN = 'UNKNOWN',
+    NOT_LOADSHEDDING = 'NOT_LOADSHEDDING',
+    STAGE_1 = 'STAGE_1',
+    STAGE_2 = 'STAGE_2',
+    STAGE_3 = 'STAGE_3',
+    STAGE_4 = 'STAGE_4',
+    STAGE_5 = 'STAGE_5',
+    STAGE_6 = 'STAGE_6',
+    STAGE_7 = 'STAGE_7',
+    STAGE_8 = 'STAGE_8',
+}
+```
+
+### Province
+
+```ts
+export enum Province {
+    EASTERN_CAPE = 1,
+    FREE_STATE = 2,
+    GAUTENG = 3,
+    KWAZULU_NATAL = 4,
+    LIMPOPO = 5,
+    MPUMALANGA = 6,
+    NORTH_WEST = 7,
+    NORTHERN_CAPE = 8,
+    WESTERN_CAPE = 9,
+};
 ```
