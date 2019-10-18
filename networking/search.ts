@@ -1,13 +1,13 @@
-import HTTPClient from "./HTTPClient";
-import { Province } from "../enums/Province";
-import { Municipality, MunicipalityRaw } from "../models/Municipality";
-import { SuburbRaw, Suburb } from "../models/Suburb";
-import { SearchSuburbRaw, SearchSuburb } from "../models/SearchSuburb";
+import HTTPClient from './HTTPClient';
+import { Province } from '../enums/Province';
+import { Municipality, MunicipalityRaw } from '../models/Municipality';
+import { SuburbRaw, Suburb } from '../models/Suburb';
+import { SearchSuburbRaw, SearchSuburb } from '../models/SearchSuburb';
 
 export class Search extends HTTPClient {
     public static async getMunicipalitiesRaw(province: Province): Promise<MunicipalityRaw[]> {
         const resp = await this.get('/GetMunicipalities/?Id=' + province);
-        return resp.data;;
+        return resp.data;
     }
 
     public static async getMunicipalities(province: Province): Promise<Municipality[]> {

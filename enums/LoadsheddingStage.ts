@@ -33,15 +33,15 @@ export function unmapRaw(status: LoadsheddingStageRaw): LoadsheddingStage {
         case LoadsheddingStageRaw.STAGE_2:
             return LoadsheddingStage.STAGE_2;
         case LoadsheddingStageRaw.STAGE_3:
-            return LoadsheddingStage.STAGE_3;        
+            return LoadsheddingStage.STAGE_3;
         case LoadsheddingStageRaw.STAGE_4:
-            return LoadsheddingStage.STAGE_4;        
+            return LoadsheddingStage.STAGE_4;
         case LoadsheddingStageRaw.STAGE_5:
-            return LoadsheddingStage.STAGE_5;        
+            return LoadsheddingStage.STAGE_5;
         case LoadsheddingStageRaw.STAGE_6:
-            return LoadsheddingStage.STAGE_6;        
+            return LoadsheddingStage.STAGE_6;
         case LoadsheddingStageRaw.STAGE_7:
-            return LoadsheddingStage.STAGE_7;        
+            return LoadsheddingStage.STAGE_7;
         case LoadsheddingStageRaw.STAGE_8:
             return LoadsheddingStage.STAGE_8;
         default:

@@ -8,4 +8,4 @@ export enum Province {
     NORTH_WEST = 7,
     NORTHERN_CAPE = 8,
     WESTERN_CAPE = 9,
-};
+}

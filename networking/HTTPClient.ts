@@ -7,7 +7,7 @@ export default class HTTPClient {
         let uri = this.BASE_URL + path;
 
         if (addTime) {
-            uri += (path.indexOf('?') > -1 ? '&' : '?') + '_=' + (new Date()).getTime();
+            uri += (path.indexOf('?') > -1 ? '&' : '?') + '_=' + new Date().getTime();
         }
 
         return axios.get(uri, {

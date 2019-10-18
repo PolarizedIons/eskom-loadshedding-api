@@ -1,35 +1,35 @@
 {
-  "name": "eskom-loadshedding-api",
-  "version": "0.1.1",
-  "description": "Exposing the Eskom Loadshedding Api",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "author": {
-    "name": "PolarizedIons",
-    "email": "me@polarizedions.net",
-    "url": "https://polarizedions.net"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PolarizedIons/eskom-loadshedding-api/"
-  },
-  "keywords": [
-    "eskom",
-    "loadshedding",
-    "api"
-  ],
-  "scripts": {
-    "prepublish": "tsc",
-    "dev": "tsc --watch"
-  },
-  "dependencies": {
-    "@types/cheerio": "^0.22.13",
-    "axios": "^0.19.0",
-    "cheerio": "^1.0.0-rc.3",
-    "moment": "^2.24.0"
-  },
-  "devDependencies": {
-    "typescript": "^3.6.4"
-  }
+    "name": "eskom-loadshedding-api",
+    "version": "0.1.1",
+    "description": "Exposing the Eskom Loadshedding Api",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": {
+        "name": "PolarizedIons",
+        "email": "me@polarizedions.net",
+        "url": "https://polarizedions.net"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PolarizedIons/eskom-loadshedding-api/"
+    },
+    "keywords": [
+        "eskom",
+        "loadshedding",
+        "api"
+    ],
+    "scripts": {
+        "prepublish": "tsc",
+        "dev": "tsc --watch"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "cheerio": "^1.0.0-rc.3",
+        "moment": "^2.24.0"
+    },
+    "devDependencies": {
+        "@types/cheerio": "^0.22.13",
+        "typescript": "^3.6.4"
+    }
 }

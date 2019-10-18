@@ -21,7 +21,6 @@ export class Suburb {
         this.total = suburb.total;
     }
 
-
     public static fromRaw(suburb: SuburbRaw) {
         return new Suburb({
             id: parseInt(suburb.id, 10),

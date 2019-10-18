@@ -36,6 +36,6 @@ export class SearchSuburb {
             suburb: searchSuburb.Name,
             id: searchSuburb.Id,
             total: searchSuburb.Total,
-        })
+        });
     }
 }
