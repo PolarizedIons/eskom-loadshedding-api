@@ -16,7 +16,7 @@ export class Search extends HTTPClient {
     }
 
     public static async getMunicipalitySuburbsRaw(municipalityId: number, searchTerm: string = '', pageNum = 1): Promise<SuburbRaw[]> {
-        const resp = await this.get(`/GetSurburbData/?pageSize=9999&pageNum=${pageNum}&searchTerm=${searchTerm}&id=${municipalityId}`);
+        const resp = await this.get(`/GetSurburbData/?pageSize=100&pageNum=${pageNum}&searchTerm=${searchTerm}&id=${municipalityId}`);
         return resp.data.Results;
     }
 
