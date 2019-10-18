@@ -1,6 +1,6 @@
 {
     "name": "eskom-loadshedding-api",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Exposing the Eskom Loadshedding Api",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
