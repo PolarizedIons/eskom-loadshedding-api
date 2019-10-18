@@ -1,18 +1,18 @@
 import HTTPClient from './HTTPClient';
-import { LoadsheddingStatus, LoadsheddingStatusRaw, unmapRaw } from '../enums/LoadsheddingStatus';
+import { LoadsheddingStage, LoadsheddingStageRaw, unmapRaw } from '../enums/LoadsheddingStage';
 
 export class Status extends HTTPClient {
-    public static async getStatusRaw(): Promise<LoadsheddingStatusRaw> {
+    public static async getStatusRaw(): Promise<LoadsheddingStageRaw> {
         try {
             const resp = await this.get('/GetStatus');
             return resp.data;
         }
         catch (e) {
-            return LoadsheddingStatusRaw.UNKNOWN;
+            return LoadsheddingStageRaw.UNKNOWN;
         }
     }
 
-    public static async getStatus(): Promise<LoadsheddingStatus> {
+    public static async getStatus(): Promise<LoadsheddingStage> {
         const status = await this.getStatusRaw();
         return unmapRaw(status);
     }
