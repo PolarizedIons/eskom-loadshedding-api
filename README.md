@@ -87,12 +87,12 @@ Schedule.getFullSchedule(1002702)
 + Status.getStatus(): Promise<LoadsheddingStatus>;
 + Status.getStatusRaw(): Promise<LoadsheddingStatusRaw>;
 
-## Search
+### Search
 + Search.getMunicipalities(province: Province): Promise<Municipality[]>;
 + Search.getMunicipalitySuburbs(municipalityId: number, searchTerm: string = '', pageNum: number = 1): Promise<Suburb[]>;
 + Search.searchSuburbs(searchTerm: string, maxResults: number = 300): Promise<SearchSuburb[]>;
 
-# Schedule
+### Schedule
 + Schedule.getSchedule(suburbId: number, stage: LoadsheddingStage): Promise<LoadsheddingSchedule>;
 + Schedule.getFullSchedule(suburbId: number): Promise<LoadsheddingSchedule[]>;
 
@@ -129,7 +129,7 @@ class SearchSuburb {
 }
 ```
 
-# Schedule
+### Schedule
 
 ```ts
 export interface LoadsheddingSchedule {
