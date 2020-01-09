@@ -12,17 +12,17 @@ A basic (in-progress) api to expose the Eskom loadshedding endpoints. Typescript
 ### Get the current status
 
 ```ts
-import { Status, LoadsheddingStatus } from 'eskom-loadshedding-api';
+import { Status, LoadsheddingStage } from 'eskom-loadshedding-api';
 
-Status.getStatus().then((status: LoadsheddingStatus) => console.log('Current status: ', status));
+Status.getStatus().then((status: LoadsheddingStage) => console.log('Current status: ', status));
 ```
 
 ### Check if currently loadshedding
 
 ```ts
-import { Status, LoadsheddingStatus } from 'eskom-loadshedding-api';
+import { Status, LoadsheddingStage } from 'eskom-loadshedding-api';
 
-Status.getStatus().then(status => console.log('Is currently loadshedding?', status !== LoadsheddingStatus.NOT_LOADSHEDDING));
+Status.getStatus().then(status => console.log('Is currently loadshedding?', status !== LoadsheddingStage.NOT_LOADSHEDDING));
 ```
 
 ### Search for municipalities
@@ -67,8 +67,7 @@ Schedule.getFullSchedule(1002702).then((schedules: LoadsheddingSchedule[]) => co
 
 ### Status
 
--   Status.getStatus(): Promise\<LoadsheddingStatus>;
--   Status.getStatusRaw(): Promise\<LoadsheddingStatusRaw>;
+-   Status.getStatus(): Promise\<LoadsheddingStage>;
 
 ### Search
 
