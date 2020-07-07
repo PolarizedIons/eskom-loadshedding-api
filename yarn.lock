@@ -3,9 +3,9 @@
 
 
 "@types/cheerio@^0.22.13":
-  version "0.22.13"
-  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.13.tgz#5eecda091a24514185dcba99eda77e62bf6523e6"
-  integrity sha512-OZd7dCUOUkiTorf97vJKwZnSja/DmHfuBAroe1kREZZTCf/tlFecwHhsOos3uVHxeKGZDwzolIrCUApClkdLuA==
+  version "0.22.20"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.20.tgz#612946700537fecc582e075cc6684befbaf881e6"
+  integrity sha512-Eig25TFYoZbPw9lWGD52oHYdlxTN09a4H36689k/4Sn6t6vGWiT4Jh3at00CBVEct4cDK3huVxaPT1MFvJ8lGQ==
   dependencies:
     "@types/node" "*"
 
