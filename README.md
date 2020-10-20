@@ -116,16 +116,16 @@ class SearchSuburb {
 ### Schedule
 
 ```ts
-export interface LoadsheddingSchedule {
+interface LoadsheddingSchedule {
     schedule: ScheduleDay[];
 }
 
-export interface ScheduleDay {
+interface ScheduleDay {
     day: Date;
     times: ScheduleTime[];
 }
 
-export interface ScheduleTime {
+interface ScheduleTime {
     startTime: Date;
     endTime: Date;
 }
