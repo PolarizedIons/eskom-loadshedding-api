@@ -1,0 +1,16 @@
+▶ curl -vs "https://loadshedding.eskom.co.za/LoadShedding//FindSuburbs?searchText=Ashton&maxResults=300" 2>&1 | sed '/^* /d; /bytes data]$/d; s/> //; s/< //'
+GET /LoadShedding//FindSuburbs?searchText=Ashton&maxResults=300 HTTP/1.1
+Host: loadshedding.eskom.co.za
+User-Agent: curl/7.73.0
+Accept: */*
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-Powered-By: ASP.NET
+Date: Tue, 20 Oct 2020 09:16:14 GMT
+Content-Length: 916
+
+[{"MunicipalityName":"Senqu","ProvinceName":"Eastern Cape","Name":"Ashton","Id":9811,"Total":538},{"MunicipalityName":"Greater Kokstad","ProvinceName":"KwaZulu-Natal","Name":"Ashton","Id":36613,"Total":0},{"MunicipalityName":"KwaDukuza","ProvinceName":"KwaZulu-Natal","Name":"Ashton","Id":37711,"Total":0},{"MunicipalityName":"Umdoni","ProvinceName":"KwaZulu-Natal","Name":"Ashton","Id":40471,"Total":0},{"MunicipalityName":"NW397","ProvinceName":"North West","Name":"Ashton","Id":52847,"Total":270},{"MunicipalityName":"Langeberg","ProvinceName":"Western Cape","Name":"Ashton","Id":66226,"Total":0},{"MunicipalityName":"Langeberg","ProvinceName":"Western Cape","Name":"Ashton Outlying","Id":66227,"Total":0},{"MunicipalityName":"Dihlabeng","ProvinceName":"Free State","Name":"Ashtonvale","Id":11103,"Total":272},{"MunicipalityName":"Ingwe","ProvinceName":"KwaZulu-Natal","Name":"Ashtonvale","Id":37286,"Total":270}]

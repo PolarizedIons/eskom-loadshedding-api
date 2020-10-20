@@ -22,7 +22,7 @@ Status.getStatus().then((status: LoadsheddingStage) => console.log('Current stat
 ```ts
 import { Status, LoadsheddingStage } from 'eskom-loadshedding-api';
 
-Status.getStatus().then(status => console.log('Is currently loadshedding?', status !== LoadsheddingStage.NOT_LOADSHEDDING));
+Status.getStatus().then((status) => console.log('Is currently loadshedding?', status !== LoadsheddingStage.NOT_LOADSHEDDING));
 ```
 
 ### Search for municipalities
@@ -31,7 +31,10 @@ Status.getStatus().then(status => console.log('Is currently loadshedding?', stat
 import { Search, Province, Municipality } from 'eskom-loadshedding-api';
 
 Search.getMunicipalities(Province.WESTERN_CAPE).then((municipalities: Municipality[]) =>
-    console.log('Western Cape municipalities:', municipalities.map((el: Municipality) => el.name))
+    console.log(
+        'Western Cape municipalities:',
+        municipalities.map((el: Municipality) => el.name)
+    )
 );
 ```
 
@@ -40,9 +43,7 @@ Search.getMunicipalities(Province.WESTERN_CAPE).then((municipalities: Municipali
 ```ts
 import { Search, Suburb } from 'eskom-loadshedding-api';
 
-Search.getMunicipalitySuburbs(10237 /* Beauford West's id */, 'Aard' /* Search term */).then((suburbs: Suburb[]) =>
-    console.log('Filterd suburbs in Beaufort West:', suburbs)
-);
+Search.getMunicipalitySuburbs(336 /* Beauford West's id */, 'Aard' /* Search term */).then((suburbs: Suburb[]) => console.log('Filterd suburbs in Beaufort West:', suburbs));
 ```
 
 ### Search for suburbs in SA
@@ -58,9 +59,9 @@ Search.searchSuburbs('Ashton').then((results: SearchSuburb[]) => console.log('Se
 ```ts
 import { LoadsheddingStage, LoadsheddingSchedule, Schedule } from 'eskom-loadshedding-api';
 
-Schedule.getSchedule(1002702, LoadsheddingStage.STAGE_1).then((schedule: LoadsheddingSchedule) => console.log(JSON.stringify(schedule, null, 4)));
+Schedule.getSchedule(62648 /* Beeldhoursfontein, Beauford West */, LoadsheddingStage.STAGE_1).then((schedule: LoadsheddingSchedule) => console.log(JSON.stringify(schedule, null, 4)));
 
-Schedule.getFullSchedule(1002702).then((schedules: LoadsheddingSchedule[]) => console.log(JSON.stringify(schedules, null, 4)));
+Schedule.getFullSchedule(62648).then((schedules: LoadsheddingSchedule[]) => console.log(JSON.stringify(schedules, null, 4)));
 ```
 
 ## Methods

@@ -1,0 +1,19 @@
+▶ curl -vs "https://loadshedding.eskom.co.za/LoadShedding/GetMunicipalities/?Id=9" 2>&1 | sed '/^* /d; /bytes data]$/d; s/> //; s/< //'
+GET /LoadShedding/GetMunicipalities/?Id=9 HTTP/1.1
+Host: loadshedding.eskom.co.za
+User-Agent: curl/7.73.0
+Accept: */*
+
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=1
+Content-Type: application/json; charset=utf-8
+Expires: Tue, 20 Oct 2020 09:03:17 GMT
+Last-Modified: Tue, 20 Oct 2020 09:03:16 GMT
+Vary: *
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-Powered-By: ASP.NET
+Date: Tue, 20 Oct 2020 09:03:16 GMT
+Content-Length: 1334
+
+[{"Selected":false,"Text":"Beaufort West","Value":"336"},{"Selected":false,"Text":"Bergrivier","Value":"337"},{"Selected":false,"Text":"Bitou","Value":"338"},{"Selected":false,"Text":"Breede Valley","Value":"339"},{"Selected":false,"Text":"Cape Agulhas","Value":"340"},{"Selected":false,"Text":"Cederberg","Value":"341"},{"Selected":false,"Text":"City of Cape Town","Value":"342"},{"Selected":false,"Text":"Drakenstein","Value":"343"},{"Selected":false,"Text":"George","Value":"344"},{"Selected":false,"Text":"Hessequa","Value":"345"},{"Selected":false,"Text":"Kannaland","Value":"346"},{"Selected":false,"Text":"Knysna","Value":"347"},{"Selected":false,"Text":"Laingsburg","Value":"348"},{"Selected":false,"Text":"Langeberg","Value":"349"},{"Selected":false,"Text":"Matzikama","Value":"350"},{"Selected":false,"Text":"Mossel Bay","Value":"351"},{"Selected":false,"Text":"Oudtshoorn","Value":"352"},{"Selected":false,"Text":"Overstrand","Value":"353"},{"Selected":false,"Text":"Prince Albert","Value":"354"},{"Selected":false,"Text":"Saldanha Bay","Value":"355"},{"Selected":false,"Text":"Stellenbosch","Value":"356"},{"Selected":false,"Text":"Swartland","Value":"357"},{"Selected":false,"Text":"Swellendam","Value":"358"},{"Selected":false,"Text":"Theewaterskloof","Value":"359"},{"Selected":false,"Text":"Witzenberg","Value":"360"}]

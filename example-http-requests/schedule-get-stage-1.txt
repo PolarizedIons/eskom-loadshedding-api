@@ -1,0 +1,471 @@
+▶ curl -vs "https://loadshedding.eskom.co.za/LoadShedding/GetScheduleM/62648/1/_/1" 2>&1 | sed '/^* /d; /bytes data]$/d; s/> //; s/< //'
+GET /LoadShedding/GetScheduleM/62648/1/_/1 HTTP/1.1
+Host: loadshedding.eskom.co.za
+User-Agent: curl/7.73.0
+Accept: */*
+
+HTTP/1.1 200 OK
+Cache-Control: public, max-age=1
+Content-Type: text/html; charset=utf-8
+Expires: Tue, 20 Oct 2020 09:23:07 GMT
+Last-Modified: Tue, 20 Oct 2020 09:23:06 GMT
+Vary: *
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-Powered-By: ASP.NET
+Date: Tue, 20 Oct 2020 09:23:06 GMT
+Content-Length: 21422
+
+
+    
+
+
+<div class="row">
+
+    <div id="schedulem">
+                                <div style="padding-top:20px">
+                                
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Tue, 20 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;08:00 - 10:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>08:00 - 10:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Wed, 21 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;14:00 - 16:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>14:00 - 16:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Thu, 22 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;22:00 - 00:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>22:00 - 00:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Fri, 23 Oct
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Sat, 24 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;06:00 - 08:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>06:00 - 08:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Sun, 25 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;12:00 - 14:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>12:00 - 14:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Mon, 26 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;20:00 - 22:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>20:00 - 22:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Tue, 27 Oct
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Wed, 28 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;04:00 - 06:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>04:00 - 06:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Thu, 29 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;10:00 - 12:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>10:00 - 12:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Fri, 30 Oct
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;18:00 - 20:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>18:00 - 20:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Sat, 31 Oct
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Sun, 01 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Mon, 02 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;00:00 - 02:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>00:00 - 02:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Tue, 03 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;08:00 - 10:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>08:00 - 10:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Wed, 04 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;16:00 - 18:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>16:00 - 18:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Thu, 05 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;22:00 - 00:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>22:00 - 00:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Fri, 06 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Sat, 07 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;06:00 - 08:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>06:00 - 08:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Sun, 08 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;14:00 - 16:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>14:00 - 16:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Mon, 09 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;20:00 - 22:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>20:00 - 22:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Tue, 10 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                            <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                     Wed, 11 Nov
+                                     
+                                    </div>
+                                    
+                                
+                               
+<div  style="padding:10px;">
+                                         <a href="#"  style="text-decoration: none" onclick="showFeeder('[{&quot;Time&quot;:&quot;04:00 - 06:30&quot;,&quot;Feeder&quot;:&quot;Hutchinson/Murraysburg 1 22kV Overhead Line&quot;}]')";>04:00 - 06:30</a<br>
+                                        
+                                    </div                          
+                        
+                        </div>
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Thu, 12 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Fri, 13 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Sat, 14 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Sun, 15 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Mon, 16 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+                               <div class="scheduleDay">
+                                        <div class="dayMonth">
+                                        Tue, 17 Nov
+                                    </div>
+                                    <div  style="padding:10px;">
+                                    -
+                                    </div>
+                                </div 
+
+                        
+                     
+                    
+                                </div>
+                                  </div>
+    
+                        </div>
+
+
+
+                        <div class="row">
+                                <div class="span12">
+                                <div id="showprint" class="page-social">
+                                
+                         <img src="" id="ps-mail" style="cursor:pointer" title="Email Calender" onclick="Showmail()" alt="Find" />
+                                    <div id="maildetails" style="display:none">
+
+                                        Enter Email <input type="email"  id="email"  required="required" /<br />
+                                       <input id="btnemail" onclick="send()" type="button" value="Send Email"  />
+                                    </div>
+                               
+                              <a id="printButton1" style="height:32px;width:32px;" Target="_blank" href='/LoadShedding/DownloadFile?ID=62648&amp;Name=Allemansfontein' ><img src="/Images/icoPrint.png" alt="Print schedule" /></a>
+                                
+                            
+                                </div>
+                            </div>
+                        </div>
+                  
+
+               
+    
+
+
+<script  type="text/javascript">
+
+
+    var id = 62648
+
+    
+
+    function send() {
+
+
+    
+        var na = 'Allemansfontein';
+        $.getJSON('/LoadShedding/DownloadFile', { ID: id, Name: na, myemail: $('#email').val() }, function (data) {
+            $.each(data, function (i, item) {
+
+
+                alert("Email sent sucessfully");
+                $("#maildetails").dialog("close");
+
+            });
+        })
+    }
+    //  function action() {
+   //    if (ValidateEmail($('#email').val()) ) {
+    //        $('#btnemail').prop("disabled", false);
+    //    } else {
+    //        $('#btnemail').prop("disabled", true);
+    //    }
+    //}
+    function Showmail() {
+        var size;
+        if ($(window).width() 800) {
+            size = $(window).width() / 2;
+        }
+        else {
+            size = 'auto';
+        }
+
+        $("#maildetails").dialog({
+
+            autoOpen: true,
+
+            width: size,
+
+
+
+            fluid: true, //new option
+
+
+
+
+
+
+
+
+            modal: true,
+            show: {
+                effect: "blind"
+            },
+            hide: {
+                effect: "explode"
+            },
+
+            buttons: {
+                "Close": function () {
+                    $(this).dialog("close");
+                }
+            },
+
+            closeOnEscape: true
+
+
+
+        });
+    }
+</script>
