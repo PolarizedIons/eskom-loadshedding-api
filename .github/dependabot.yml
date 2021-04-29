@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/cheerio"
+    versions:
+    - 0.22.23
+    - 0.22.24
+    - 0.22.25
+    - 0.22.26
+    - 0.22.27
+  - dependency-name: cheerio
+    versions:
+    - 1.0.0-rc.5
