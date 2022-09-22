@@ -10,6 +10,7 @@ export default class HTTPClient {
             uri += (path.indexOf('?') > -1 ? '&' : '?') + '_=' + new Date().getTime();
         }
 
+        console.log(`Calling uri: ${uri}`);
         return axios.get(uri, {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0',

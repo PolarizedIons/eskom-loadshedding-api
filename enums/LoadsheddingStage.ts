@@ -45,6 +45,7 @@ export function unmapRaw(status: LoadsheddingStageRaw): LoadsheddingStage {
         case LoadsheddingStageRaw.STAGE_8:
             return LoadsheddingStage.STAGE_8;
         default:
+            console.error(`Unknown status: ${status}`);
             return LoadsheddingStage.UNKNOWN;
     }
 }
